@@ -1,0 +1,21 @@
+---
+title: "exercise-02b"
+author: "Monica"
+date: "2025-01-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Notes Markdown 2
+
+Here are more of my class notes, taken in R today:
+
+```{r, eval = FALSE}
+#tidyverse has tons of stringer functions to manipulate text quickly
+sciname <- paste(d$Genus, d$Species, sep = " ") #creates character vector of these two columns of data with an added space between, basically pastes these vectors together
+sciname <- paste0(d$Genus, " ", ".", d$Species) #basically same but you can paste multiple separate things in between the vectors you're pasting together
+unique(d$Genus) #looks at values that are unique, ignores repeats essentially
+```
